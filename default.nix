@@ -6,4 +6,7 @@
       ./modules/other.nix
       ./modules/rtirq.nix
     ];
+
+    nixpkgs.overlays = [ (import ./overlay.nix) ];
+
 }
